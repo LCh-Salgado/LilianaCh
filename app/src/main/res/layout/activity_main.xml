@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#34d8eb"
+    android:background="#CC99FF"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -14,9 +14,9 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:text="The orinal super mario bros game was released in 1985?."
+        android:text="The Witcher 3 Wild Hunt was developed by Ubisoft?"
         android:id="@+id/questionTV"/>
-    
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#c77d7d"
+            android:backgroundTint="#15f4ee"
             android:textColor="#FF0000"
             android:text="FALSE"
             android:id="@+id/falseBTN"
