@@ -41,12 +41,13 @@ public class MainActivity extends AppCompatActivity {
         q6 = new Question("Pac-Man was originally called Puck Man?", true);
         q7 = new Question("The game Fornite was originally developed as a zombie survival game before the battle royal mode was introduced?",true);
         q8 = new Question("The Pokemon Franchise was created by Sega?", false);
-        q9 = new Question("The game Among Us became ")
-        q10 = new Question()
+        q9 = new Question("The game Among Us became popular during the COVID-19 pandemic in 2020?", true);
+        q10 = new Question("The PlayStation 4 was released before the Xbox One?", true);
 
         currentIndex = 0;
         currentQ = q1;
         questions = new Question[] {q1, q2, q3, q4, q5, q6, q7, q8, q9, q10};
+
         questionTV = findViewById(R.id.questionTV);
         trueBTN = findViewById(R.id.trueBTN);
         falseBTN = findViewById(R.id.falseBTN);
@@ -55,8 +56,15 @@ public class MainActivity extends AppCompatActivity {
         trueBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                toastMsg = "You got the question right";
-                score++;
+                if(currentQ.getCorrAns()==true)   {
+                    toastMsg = "You got the question right.";
+                    score++;
+
+                }
+                else {
+                    toastMsg = "You got the question wrong.";
+
+                }
                 duration =  Toast.LENGTH_SHORT;
                 myToast = Toast.makeText(MainActivity.this, toastMsg, duration);
                 myToast.show();
@@ -67,7 +75,13 @@ public class MainActivity extends AppCompatActivity {
         falseBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                toastMsg = "You got the question wrong";
+                if(currentQ.getCorrAns()==false) {
+                    toastMsg = "You got the question right.";
+                    score++;
+                }
+                else {
+                    toastMsg = "You got the question wrong.";
+                }
                 duration =  Toast.LENGTH_SHORT;
                 myToast = Toast.makeText(MainActivity.this, toastMsg, duration);
                 myToast.show();
