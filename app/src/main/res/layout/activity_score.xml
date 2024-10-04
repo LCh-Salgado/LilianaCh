@@ -5,8 +5,16 @@
     android:background="#CC99FF"
     android:layout_gravity="center"
     android:gravity="center"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="SCORE:"
+        android:textSize="50dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,5 +24,13 @@
         android:id="@+id/scoreTV"
         android:text="0"
         android:textSize="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND SCORE BY EMAIL"
+        android:id="@+id/sendE"
+        android:textSize="30dp"/>
+
 
 </LinearLayout>

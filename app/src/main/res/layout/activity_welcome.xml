@@ -10,13 +10,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="25sp"
+        android:textSize="25dp"
         android:text="Welcome This Is A VideoGame Quiz Let See If You Know...."/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/touchBTN"
+        android:textSize="25dp"
         android:textStyle="bold"
         android:text="GOO!!" />
 
