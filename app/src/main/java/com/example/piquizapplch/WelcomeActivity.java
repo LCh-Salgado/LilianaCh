@@ -15,7 +15,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     int button;
     Button goBTN;
-    Intent goToQ;
+    Intent goToSA;
 
 
     @Override
@@ -27,9 +27,9 @@ public class WelcomeActivity extends AppCompatActivity {
         goBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                goToQ = new Intent(WelcomeActivity.this, MainActivity.class);
-                goToQ.putExtra("Button", button);
-                startActivity(goToQ);
+                goToSA = new Intent(WelcomeActivity.this, MainActivity.class);
+                goToSA.putExtra("Button", button);
+                startActivity(goToSA);
 
             }
         });

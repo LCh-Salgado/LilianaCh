@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     int score, duration;
     String toastMsg;
     Toast myToast;
-    Intent goToSA;
+    Intent atToSA;
     Question q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, currentQ;
     Question[] questions;
     int currentIndex;
@@ -93,9 +93,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (currentIndex == 9) {
-                    goToSA = new Intent(MainActivity.this, ScoreActivity.class);
-                    goToSA.putExtra("Score", score);
-                    startActivity(goToSA);
+                    atToSA = new Intent(MainActivity.this, ScoreActivity.class);
+                    atToSA.putExtra("Score", score);
+                    startActivity(atToSA);
 
                 }
                 else {
