@@ -14,7 +14,7 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:text="The Witcher 3 Wild Hunt was developed by Ubisoft?"
+        android:text="@string/q1text"
         android:id="@+id/questionTV"/>
 
 
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#00FF00"
-            android:text="TRUE"
+            android:text="@string/trueText"
             android:backgroundTint="#C154C1"
             android:id="@+id/trueBTN"
             android:gravity="center"
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#15f4ee"
             android:textColor="#FF0000"
-            android:text="FALSE"
+            android:text="@string/falseText"
             android:id="@+id/falseBTN"
             android:gravity="center" />
 
@@ -48,7 +48,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NEXT"
+        android:text="@string/nextText"
         android:id="@+id/nextBTN"
         android:gravity="center" />
 

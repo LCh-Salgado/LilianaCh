@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">PiQuizAppLCh</string>
+    <string name="trueText">TRUE</string>
+    <string name="falseText">FALSE</string>
+    <string name="nextText">NEXT</string>
+    <string name="q1text">The Witcher 3 Wild Hunt was developed by Ubisoft?</string>
+    <string name="q2text">The original Super Mario Bross Game was released in 1985?</string>
+    <string name="q3text">The game Minecraft was first released in 2011?</string>
+    <string name="q4text">There are more than 15 games in the Call Of Duty Series?</string>
+    <string name="q5text">The Nintendo Switch was released in 2016?</string>
+    <string name="q6text">Pac-Man was originally called Puck Man?</string>
+    <string name="q7text">The game Fornite was originally developed as a zombie survival game before the battle royal mode was introduced?</string>
+    <string name="q8text">The Pokemon Franchise was created by Sega?</string>
+    <string name="q9text">The game Among Us became popular during the COVID-19 pandemic in 2020?</string>
+    <string name="q10text">The PlayStation 4 was released before the Xbox One?</string>
+    <string name="welcome_msg">Welcome This Is A VideoGame Quiz Let See If You Know....</string>
+    <string name="score_msg">SCORE:</string>
+    <string name="score_text">0</string>
+    <string name="send_score_by_email">SEND SCORE BY EMAIL</string>
+    <string name="goo_text">GOO!!</string>
+    <string name="wrong_msg">You got the question wrong.</string>
+    <string name="trueToastMsg">You got the question right.</string>
+    <string name="falseToastMsg">You got the question wrong.</string>
 </resources>

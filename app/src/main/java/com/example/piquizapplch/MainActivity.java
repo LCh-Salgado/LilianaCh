@@ -32,17 +32,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         score = 0;
-        toastMsg ="You got the question wrong.";
-        q1 = new Question("The Witcher 3 Wild Hunt was developed by Ubisoft?", false);
-        q2 = new Question("The original Super Mario Bross Game was released in 1985?", true);
-        q3 = new Question("The game Minecraft was first released in 2011?", true);
-        q4 = new Question("There are more than 15 games in the Call Of Duty Series?", false);
-        q5 = new Question("The Nintendo Switch was released in 2016?", true);
-        q6 = new Question("Pac-Man was originally called Puck Man?", true);
-        q7 = new Question("The game Fornite was originally developed as a zombie survival game before the battle royal mode was introduced?",true);
-        q8 = new Question("The Pokemon Franchise was created by Sega?", false);
-        q9 = new Question("The game Among Us became popular during the COVID-19 pandemic in 2020?", true);
-        q10 = new Question("The PlayStation 4 was released before the Xbox One?", true);
+        toastMsg =getString(R.string.wrong_msg);
+        q1 = new Question(getString(R.string.q1text), false);
+        q2 = new Question(getString(R.string.q2text), true);
+        q3 = new Question(getString(R.string.q3text), true);
+        q4 = new Question(getString(R.string.q4text), false);
+        q5 = new Question(getString(R.string.q5text), true);
+        q6 = new Question(getString(R.string.q6text), true);
+        q7 = new Question(getString(R.string.q7text),true);
+        q8 = new Question(getString(R.string.q8text), false);
+        q9 = new Question(getString(R.string.q9text), true);
+        q10 = new Question(getString(R.string.q10text), true);
 
         currentIndex = 0;
         currentQ = q1;
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(currentQ.getCorrAns()==true)   {
-                    toastMsg = "You got the question right.";
+                    toastMsg = getString(R.string.trueToastMsg);
                     score++;
 
                 }
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                     score++;
                 }
                 else {
-                    toastMsg = "You got the question wrong.";
+                    toastMsg = getString(R.string.falseToastMsg);
                 }
                 duration =  Toast.LENGTH_SHORT;
                 myToast = Toast.makeText(MainActivity.this, toastMsg, duration);
