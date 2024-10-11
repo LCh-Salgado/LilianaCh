@@ -17,7 +17,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="300sp"
-        android:src="@drawable/games_background"/>
+        android:src="@drawable/games_background" />
 
     <Button
         android:id="@+id/touchBTN"
