@@ -36,9 +36,9 @@ public class ScoreActivity extends AppCompatActivity {
         sendScoreByE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String[] addresses = new String[] {"lilianachicas180@gmail.com"};
-                String subject = "New score on the video games app";
-                String body = "Score of your quiz: " + score;
+                String[] addresses = new String[] {getString(R.string.personal_email)};
+                String subject = getString(R.string.email_subject);
+                String body = getString(R.string.body_score) + score;
                 composeEmail(addresses, subject, body);
 
 

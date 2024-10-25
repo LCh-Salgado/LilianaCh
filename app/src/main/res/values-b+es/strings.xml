@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PiQuizAppLCh</string>
+    <string name="trueText">VERDADERO</string>
+    <string name="falseText">FALSO</string>
+    <string name="nextText">SIGUIENTE</string>
+    <string name="q1text">¿The Witcher 3 Wild Hunt fue desarrollado por Ubisoft?</string>
+    <string name="q2text">¿El juego original Super Mario Bros fue lanzado en 1985?</string>
+    <string name="q3text">¿El juego Minecraft se lanzó por primera vez en 2011?</string>
+    <string name="q4text">¿Hay más de 15 juegos en la serie Call Of Duty?</string>
+    <string name="q5text">¿La Nintendo Switch se lanzó en 2016?</string>
+    <string name="q6text">¿Pac-Man originalmente se llamaba Puck Man?</string>
+    <string name="q7text">El juego Fortnite se desarrolló originalmente como un juego de
+        supervivencia de zombies antes de que se introdujera el modo Battle Royal.</string>
+    <string name="q8text">¿La franquicia Pokémon fue creada por Sega?</string>
+    <string name="q9text">¿El juego Among Us se hizo popular durante la pandemia de COVID-19 en 2020?</string>
+    <string name="q10text">¿La PlayStation 4 se lanzó antes que la Xbox One?</string>
+    <string name="welcome_msg">Bienvenidos Este Es Un Cuestionario De Video Veamos Si Lo Sabes...</string>
+    <string name="score_msg">PUNTAJE:</string>
+    <string name="score_text">0</string>
+    <string name="send_score_by_email">ENVIAR PUNTAJE POR EMAIL</string>
+    <string name="goo_text">VAMOSS  !!</string>
+    <string name="rightToastMsg">Tienes la pregunta correcta.</string>
+    <string name="wrongToastMsg">Te equivocaste en la pregunta.</string>
+    <string name="email_subject">Nueva puntuación en la aplicación de videojuegos</string>
+    <string name="body_score">"Puntuación de tu cuestionario: "</string>
+    <string name="personal_email">lilianachicas180@gmail.com</string>
+</resources>
+

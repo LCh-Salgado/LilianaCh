@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         score = 0;
-        toastMsg =getString(R.string.wrong_msg);
+        toastMsg =getString(R.string.wrongToastMsg);
         q1 = new Question(getString(R.string.q1text), false);
         q2 = new Question(getString(R.string.q2text), true);
         q3 = new Question(getString(R.string.q3text), true);
@@ -57,12 +57,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(currentQ.getCorrAns()==true)   {
-                    toastMsg = getString(R.string.trueToastMsg);
+                    toastMsg = getString(R.string.rightToastMsg);
                     score++;
 
                 }
                 else {
-                    toastMsg = "You got the question wrong.";
+                    toastMsg = getString(R.string.wrongToastMsg);
 
                 }
                 duration =  Toast.LENGTH_SHORT;
@@ -76,11 +76,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(currentQ.getCorrAns()==false) {
-                    toastMsg = "You got the question right.";
+                    toastMsg = getString(R.string.rightToastMsg);
                     score++;
                 }
                 else {
-                    toastMsg = getString(R.string.falseToastMsg);
+                    toastMsg = getString(R.string.wrongToastMsg);
                 }
                 duration =  Toast.LENGTH_SHORT;
                 myToast = Toast.makeText(MainActivity.this, toastMsg, duration);

@@ -9,7 +9,8 @@
     <string name="q4text">There are more than 15 games in the Call Of Duty Series?</string>
     <string name="q5text">The Nintendo Switch was released in 2016?</string>
     <string name="q6text">Pac-Man was originally called Puck Man?</string>
-    <string name="q7text">The game Fornite was originally developed as a zombie survival game before the battle royal mode was introduced?</string>
+    <string name="q7text">The game Fornite was originally developed as a zombie survival game
+        before the battle royal mode was introduced?</string>
     <string name="q8text">The Pokemon Franchise was created by Sega?</string>
     <string name="q9text">The game Among Us became popular during the COVID-19 pandemic in 2020?</string>
     <string name="q10text">The PlayStation 4 was released before the Xbox One?</string>
@@ -17,8 +18,10 @@
     <string name="score_msg">SCORE:</string>
     <string name="score_text">0</string>
     <string name="send_score_by_email">SEND SCORE BY EMAIL</string>
-    <string name="goo_text">GOO!!</string>
-    <string name="wrong_msg">You got the question wrong.</string>
-    <string name="trueToastMsg">You got the question right.</string>
-    <string name="falseToastMsg">You got the question wrong.</string>
+    <string name="goo_text">GO!!</string>
+    <string name="rightToastMsg">You got the question right.</string>
+    <string name="wrongToastMsg">You got the question wrong.</string>
+    <string name="email_subject">New score on the video games app</string>
+    <string name="body_score">"Score of your quiz: "</string>
+    <string name="personal_email">lilianachicas180@gmail.com</string>
 </resources>
