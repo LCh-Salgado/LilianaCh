@@ -14,10 +14,18 @@
         android:textSize="40dp"
         android:textStyle="bold" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="YourName"
+        android:id="@+id/typeYourNBTN"
+        android:textSize="25sp"/>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="300sp"
         android:src="@drawable/games_background" />
+
 
     <Button
         android:id="@+id/touchBTN"
