@@ -1,6 +1,7 @@
 package com.example.piquizapplch;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,12 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    private SharedPreferences mPreferences;
+    private String sharedPreferences= "com.example.piquizapplch.sp";
+    private final String NAME_KEY = "NAME";
+    String initialName;
+
+    TextView hiPlayerTV;
     TextView questionTV;
     Button trueBTN, falseBTN, nextBTN;
     int score, duration;
@@ -31,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mPreferences = getSharedPreferences(sharedPreferences, MODE_PRIVATE);
+        initialName = mPreferences.getString(NAME_KEY, "Player");
         score = 0;
         toastMsg =getString(R.string.wrongToastMsg);
         q1 = new Question(getString(R.string.q1text), false);
@@ -48,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
         currentQ = q1;
         questions = new Question[] {q1, q2, q3, q4, q5, q6, q7, q8, q9, q10};
 
+        hiPlayerTV = findViewById(R.id.playerTV);
+        hiPlayerTV.setText("Hi Player:" + initialName);
         questionTV = findViewById(R.id.questionTV);
         trueBTN = findViewById(R.id.trueBTN);
         falseBTN = findViewById(R.id.falseBTN);

@@ -5,14 +5,13 @@ public class HighScoreEntry {
     private String name;
     private int score;
 
-    public void setScore(int score) {
+    public HighScoreEntry(String name) {
+        this.name = name;
+    }
+
+    public HighScoreEntry(int score) {
         this.score = score;
     }
-
-    public double getScore() {
-        return score;
-    }
-
 
     public String getName() {
         return name;
@@ -22,7 +21,11 @@ public class HighScoreEntry {
         this.name = name;
     }
 
-    public HighScoreEntry(String name) {
-        this.name = name;
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 }
