@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "735068356887",
+    "project_id": "piquizapplch",
+    "storage_bucket": "piquizapplch.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735068356887:android:af802189fac135bfcc7752",
+        "android_client_info": {
+          "package_name": "com.example.piquizapplch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN8CE9Wq4zx5Y0ll2ZOJ2vfh2e19U4ovI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

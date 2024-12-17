@@ -14,12 +14,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private SharedPreferences mPreferences;
     private String sharedPreferences= "com.example.piquizapplch.sp";
     private final String NAME_KEY = "NAME";
     String initialName;
+
+
 
     TextView hiPlayerTV;
     TextView questionTV;

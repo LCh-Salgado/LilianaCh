@@ -5,12 +5,13 @@ public class HighScoreEntry {
     private String name;
     private int score;
 
-    public HighScoreEntry(String name) {
+    public HighScoreEntry(String name, int score) {
         this.name = name;
-    }
-
-    public HighScoreEntry(int score) {
         this.score = score;
+    }
+    public HighScoreEntry() {
+        this.name = "";
+        this.score = 0;
     }
 
     public String getName() {
@@ -27,5 +28,13 @@ public class HighScoreEntry {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    @Override
+    public String toString() {
+        return "HighScoreEntry{" +
+                "name='" + name + '\'' +
+                ", score=" + score +
+                '}';
     }
 }

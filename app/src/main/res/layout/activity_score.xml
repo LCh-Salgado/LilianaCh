@@ -11,8 +11,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Hello Player:"
+        android:id="@+id/playerNameTV"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textStyle="bold"
         android:text="@string/score_msg"
+        android:textColor="@color/black"
         android:textSize="50dp"
         />
 
@@ -23,6 +34,7 @@
         android:textStyle="bold"
         android:id="@+id/scoreTV"
         android:text="@string/score_text"
+        android:textColor="@color/black"
         android:textSize="50dp" />
 
     <Button
@@ -30,7 +42,15 @@
         android:layout_height="wrap_content"
         android:text="@string/send_score_by_email"
         android:id="@+id/sendE"
+        android:textStyle="bold"
         android:textSize="30dp"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SendScoreToFB"
+        android:textStyle="bold"
+        android:id="@+id/sendScoreFBBTN"
+        android:textSize="25sp"/>
 
 </LinearLayout>
