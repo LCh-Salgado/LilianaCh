@@ -24,9 +24,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Score:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/playerScore1TV"
-        android:textStyle="bold"
-        android:textSize="25sp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,24 +47,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Score:"
-        android:id="@+id/playerScore2TV"
         android:textSize="25sp"
         android:textStyle="bold"/>
 
     <TextView
+        android:id="@+id/playerScore2TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/playerName3TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Player 3:"
-        android:id="@+id/playerName3TV"
-        android:textStyle="bold"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Score:"
-        android:id="@+id/playerScore3TV"
         android:textSize="25sp"
         android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/playerScore3TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
 </LinearLayout>

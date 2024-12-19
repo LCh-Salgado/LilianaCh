@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "735068356887",
-    "project_id": "piquizapplch",
-    "storage_bucket": "piquizapplch.firebasestorage.app"
+    "project_number": "779944750549",
+    "firebase_url": "https://piquizapplch2-default-rtdb.firebaseio.com",
+    "project_id": "piquizapplch2",
+    "storage_bucket": "piquizapplch2.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:735068356887:android:af802189fac135bfcc7752",
+        "mobilesdk_app_id": "1:779944750549:android:2d82cb2c21b0586fbce15c",
         "android_client_info": {
           "package_name": "com.example.piquizapplch"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDN8CE9Wq4zx5Y0ll2ZOJ2vfh2e19U4ovI"
+          "current_key": "AIzaSyBTmG2V3LyCYlupB3-RF8jUAokHGglzp6Q"
         }
       ],
       "services": {

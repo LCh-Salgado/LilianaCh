@@ -48,7 +48,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SendScoreToFB"
+        android:text="Send To High Score"
         android:textStyle="bold"
         android:id="@+id/sendScoreFBBTN"
         android:textSize="25sp"/>
