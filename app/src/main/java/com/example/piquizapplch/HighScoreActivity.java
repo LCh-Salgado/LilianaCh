@@ -21,24 +21,30 @@ import java.util.ArrayList;
 
 public class HighScoreActivity extends AppCompatActivity {
 
-    TextView firstPlayerTV;
-    TextView firstScorePlayerTV;
-
     ArrayList<HighScoreEntry> players;
 
     int score1;
     int score2;
     int score3;
+    int score4;
 
     String player1;
     String player2;
     String player3;
+    String player4;
+
+
+    TextView firstPlayerTV;
+    TextView firstScorePlayerTV;
 
     TextView secondPlayerTV;
     TextView secondScorePlayerTV;
 
     TextView thirdPlayerTV;
     TextView thirdScorePlayerTV;
+
+    TextView fourPlayerTV;
+    TextView fourScorePlayerTV;
 
     FirebaseDatabase database;
     DatabaseReference myRef;
@@ -47,6 +53,7 @@ public class HighScoreActivity extends AppCompatActivity {
     HighScoreEntry playerHighScore1;
     HighScoreEntry playerHighScore2;
     HighScoreEntry playerHighScore3;
+    HighScoreEntry playerHighScore4;
 
     public static final String TAG = "VALUE FB";
 
@@ -62,19 +69,25 @@ public class HighScoreActivity extends AppCompatActivity {
         firstPlayerTV = (TextView)findViewById(R.id.playerName1TV);
         firstScorePlayerTV = (TextView)findViewById(R.id.playerScore1TV);
 
-        score1 = 0;
-        score2 = 0;
-        score3 = 0;
-
-        player1 = "";
-        player2 = "";
-        player3 = "";
-
         secondPlayerTV = (TextView)findViewById(R.id.playerName2TV);
         secondScorePlayerTV = (TextView)findViewById(R.id.playerScore2TV);
 
         thirdPlayerTV = (TextView)findViewById(R.id.playerName3TV);
         thirdScorePlayerTV = (TextView)findViewById(R.id.playerScore3TV);
+
+        fourPlayerTV = (TextView)findViewById(R.id.playerName4TV);
+        fourScorePlayerTV = (TextView)findViewById(R.id.playerScore4TV);
+
+        score1 = 0;
+        score2 = 0;
+        score3 = 0;
+        score4 = 0;
+
+        player1 = "";
+        player2 = "";
+        player3 = "";
+        player4 = "";
+
 
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
@@ -108,6 +121,13 @@ public class HighScoreActivity extends AppCompatActivity {
                     thirdPlayerTV.setText(player3);
                     thirdScorePlayerTV.setText(score3 + "");
                 }
+                if(players.size()>3) {
+                    playerHighScore4 = players.get(3);
+                    player4 = playerHighScore4.getName();
+                    score4 = playerHighScore4.getScore();
+                    fourPlayerTV.setText(player4);
+                    fourScorePlayerTV.setText(score4 + "");
+                    }
 
 
                 }

@@ -4,20 +4,25 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="#CC99FF"
-    android:gravity="top"
+    android:gravity="center_vertical"
     android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
 
     <TextView
         android:id="@+id/playerTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Player:"
+        android:text="@string/PlayersName"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold" />
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="200sp"/>
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -57,11 +62,21 @@
 
     </LinearLayout>
 
-    <Button
+
+    <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nextText"
         android:id="@+id/nextBTN" />
+    </LinearLayout>
+
 
 
 </LinearLayout>

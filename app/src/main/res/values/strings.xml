@@ -24,4 +24,7 @@
     <string name="email_subject">New score on the video games app</string>
     <string name="body_score">"Score of your quiz: "</string>
     <string name="personal_email">lilianachicas180@gmail.com</string>
+    <string name="PlayersName">Hi Player:</string>
+    <string name="playersHighScore">Send To High Score</string>
+
 </resources>
