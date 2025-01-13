@@ -24,16 +24,16 @@
 
     </LinearLayout>
 
+
     <TextView
+        android:id="@+id/questionTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
         android:text="@string/q1text"
-        android:id="@+id/questionTV"/>
-
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -27,6 +27,7 @@
     <string name="personal_email">lilianachicas180@gmail.com</string>
     <string name="PlayersName">Hola Jugador</string>
     <string name="playersHighScore">ENVIAR A LA PUNTACION MAS ALTA</string>
+    <string name="RESTART">EMPESAR DE NUEVO</string>
     <string name="your_name">Su Nombre</string>
 </resources>
 

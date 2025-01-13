@@ -42,6 +42,8 @@ public class ScoreActivity extends AppCompatActivity {
     Intent welcomeToSA;
     Button sendScoreByE;
     Button sendScoreFB;
+    Button restarBtnn;
+    Intent returnToTheBIntent;
 
     FirebaseDatabase database;
     DatabaseReference myRef;
@@ -55,6 +57,7 @@ public class ScoreActivity extends AppCompatActivity {
         setContentView(R.layout.activity_score);
         sendScoreByE = (Button)findViewById(R.id.sendE);
         sendScoreFB = (Button)findViewById(R.id.sendScoreFBBTN);
+        restarBtnn = (Button)findViewById(R.id.restartBTN);
 
         scoreTV = findViewById(R.id.scoreTV);
         score = 0;
@@ -92,6 +95,13 @@ public class ScoreActivity extends AppCompatActivity {
                 myRef.child(key).setValue(player1);
                 showHighScoreIntent = new Intent(ScoreActivity.this, HighScoreActivity.class);
                 startActivity(showHighScoreIntent);
+            }
+        });
+        restarBtnn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                returnToTheBIntent = new Intent(ScoreActivity.this, MainActivity.class);
+                startActivity(returnToTheBIntent);
             }
         });
 
