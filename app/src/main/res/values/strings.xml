@@ -25,6 +25,8 @@
     <string name="body_score">"Score of your quiz: "</string>
     <string name="personal_email">lilianachicas180@gmail.com</string>
     <string name="PlayersName">Hi Player:</string>
-    <string name="playersHighScore">Send To High Score</string>
+    <string name="playersHighScore">SEND TO THE HIGH SCORE</string>
+    <string name="your_name">Your Name</string>
+
 
 </resources>

@@ -15,7 +15,7 @@
     <string name="q8text">¿La franquicia Pokémon fue creada por Sega?</string>
     <string name="q9text">¿El juego Among Us se hizo popular durante la pandemia de COVID-19 en 2020?</string>
     <string name="q10text">¿La PlayStation 4 se lanzó antes que la Xbox One?</string>
-    <string name="welcome_msg">Bienvenidos Este Es Un Cuestionario De Video Veamos Si Lo Sabes...</string>
+    <string name="welcome_msg">Bienvenidos Este Es Un Cuestionario De Video Juegos Veamos Si Lo Sabes...</string>
     <string name="score_msg">PUNTAJE:</string>
     <string name="score_text">0</string>
     <string name="send_score_by_email">ENVIAR PUNTAJE POR EMAIL</string>
@@ -25,5 +25,8 @@
     <string name="email_subject">Nueva puntuación en la aplicación de videojuegos</string>
     <string name="body_score">"Puntuación de tu cuestionario: "</string>
     <string name="personal_email">lilianachicas180@gmail.com</string>
+    <string name="PlayersName">Hola Jugador</string>
+    <string name="playersHighScore">ENVIAR A LA PUNTACION MAS ALTA</string>
+    <string name="your_name">Su Nombre</string>
 </resources>
 
