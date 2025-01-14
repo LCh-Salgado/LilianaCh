@@ -18,6 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class HighScoreActivity extends AppCompatActivity {
 
@@ -100,6 +101,9 @@ public class HighScoreActivity extends AppCompatActivity {
                     Log.d(TAG, "Value is: " + myHighScore.getName());
                     players.add(myHighScore);
                 }
+
+                Collections.sort(players);
+
                 if(players.size()>0){
                     playerHighScore1 = players.get(0);
                     player1 = playerHighScore1.getName();
@@ -138,6 +142,7 @@ public class HighScoreActivity extends AppCompatActivity {
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
                 Log.w(TAG, "Failed to read value.", error.toException());
+
             }
         });
 

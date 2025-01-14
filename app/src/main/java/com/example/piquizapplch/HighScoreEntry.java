@@ -1,6 +1,6 @@
 package com.example.piquizapplch;
 
-public class HighScoreEntry {
+public class HighScoreEntry implements Comparable {
 
     private String name;
     private int score;
@@ -28,6 +28,12 @@ public class HighScoreEntry {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    @Override
+    public int compareTo(Object obj) {
+        HighScoreEntry other = (HighScoreEntry) obj;
+        return other.score - this.score;
     }
 
     @Override

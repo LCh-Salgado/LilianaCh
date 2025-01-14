@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,8 +23,6 @@ public class MainActivity extends AppCompatActivity {
     private final String NAME_KEY = "NAME";
     String initialName;
 
-
-
     TextView hiPlayerTV;
     TextView questionTV;
     Button trueBTN, falseBTN, nextBTN;
@@ -34,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     Question q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, currentQ;
     Question[] questions;
     int currentIndex;
+
+    ImageView FaceIV;
 
 
     @Override
@@ -66,18 +67,22 @@ public class MainActivity extends AppCompatActivity {
         trueBTN = findViewById(R.id.trueBTN);
         falseBTN = findViewById(R.id.falseBTN);
         nextBTN = findViewById(R.id.nextBTN);
+        FaceIV = (ImageView)findViewById(R.id.sadFImageV);
+
 
         trueBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FaceIV.setVisibility(View.VISIBLE);
                 if(currentQ.getCorrAns()==true)   {
                     toastMsg = getString(R.string.rightToastMsg);
+                    FaceIV.setImageResource(R.drawable.happyface);
                     score++;
 
                 }
                 else {
                     toastMsg = getString(R.string.wrongToastMsg);
-
+                    FaceIV.setImageResource(R.drawable.sadface);
                 }
                 duration =  Toast.LENGTH_SHORT;
                 myToast = Toast.makeText(MainActivity.this, toastMsg, duration);
@@ -89,12 +94,15 @@ public class MainActivity extends AppCompatActivity {
         falseBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FaceIV.setVisibility(View.VISIBLE);
                 if(currentQ.getCorrAns()==false) {
                     toastMsg = getString(R.string.rightToastMsg);
+                    FaceIV.setImageResource(R.drawable.happyface);
                     score++;
                 }
                 else {
                     toastMsg = getString(R.string.wrongToastMsg);
+                    FaceIV.setImageResource(R.drawable.sadface);
                 }
                 duration =  Toast.LENGTH_SHORT;
                 myToast = Toast.makeText(MainActivity.this, toastMsg, duration);
@@ -113,6 +121,8 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 else {
+                    FaceIV.setVisibility(View.INVISIBLE);
+
                     currentIndex++;
                     currentQ = questions[currentIndex];
                     questionTV.setText(currentQ.getQText());
