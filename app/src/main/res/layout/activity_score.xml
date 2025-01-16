@@ -17,6 +17,9 @@
         android:textStyle="bold"
         android:textColor="@color/black"/>
 
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="95dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,6 +30,7 @@
         android:textSize="50dp"
         />
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,6 +40,10 @@
         android:text="@string/score_text"
         android:textColor="@color/black"
         android:textSize="50dp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="110dp"/>
 
     <Button
         android:layout_width="wrap_content"

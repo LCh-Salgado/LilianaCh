@@ -74,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FaceIV.setVisibility(View.VISIBLE);
+                trueBTN.setVisibility(View.GONE);
+                falseBTN.setVisibility(View.GONE);
                 if(currentQ.getCorrAns()==true)   {
                     toastMsg = getString(R.string.rightToastMsg);
                     FaceIV.setImageResource(R.drawable.happyface);
@@ -95,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FaceIV.setVisibility(View.VISIBLE);
+                trueBTN.setVisibility(View.GONE);
+                falseBTN.setVisibility(View.GONE);
                 if(currentQ.getCorrAns()==false) {
                     toastMsg = getString(R.string.rightToastMsg);
                     FaceIV.setImageResource(R.drawable.happyface);
@@ -122,6 +126,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
                     FaceIV.setVisibility(View.INVISIBLE);
+                    trueBTN.setVisibility(View.VISIBLE);
+                    falseBTN.setVisibility(View.VISIBLE);
 
                     currentIndex++;
                     currentQ = questions[currentIndex];
